@@ -1,0 +1,161 @@
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+
+  background-color: #23252C;
+
+  font-family: 'Rubik', sans-serif;
+}
+
+.wrapper {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25em;
+  overflow: hidden;
+
+  margin: 0px 0px 0px 0px;
+}
+
+.pic-cont {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: #FFFFFF;
+
+  background-image: url(https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  filter: grayscale();
+
+  transition: background-size 200ms, filter 500ms;
+}
+
+.pic-cont:hover {
+  background-size: 125%;
+  filter: none;
+}
+
+.cont {
+  background-color: #1A1B21;
+  padding: 1em 2em;
+}
+
+.cont:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.name {
+  color: #FFFFFF;
+}
+
+.work {
+  font-weight: 400;
+  color: #F3BF99;
+}
+
+.website {
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+.btns-cont {
+  margin-top: 1em;
+}
+
+.btn {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  font-size: large;
+  border-radius: 5px;
+  color: #FFFFFF;
+  box-shadow: 0px 0px 20px 0.5px #08080a;
+
+  transition: 200ms;
+}
+
+.btn:hover {
+  transform: scale(110%);
+}
+
+.email-btn {
+  background-color: #3e65cf;
+}
+
+.github-btn {
+  background-color: #333;
+}
+
+.btns-cont {
+  display: flex;
+  gap: 2em;
+}
+
+.cont:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: #FFFFFF;
+}
+
+.sec p {
+  margin-top: 0.5em;
+}
+
+.footer {
+  background-color: #161619;
+  padding: 1em;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.footer-btns {
+  aspect-ratio: 1/1;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  border-radius: 5px;
+  color: #FFFFFF;
+  box-shadow: 0px 0px 20px 0.5px #08080a;
+
+  transition: 200ms;
+}
+
+.footer-btns:hover {
+  transform: scale(110%);
+}
+
+.red {
+  background-color: #bf212f;
+}
+
+.green {
+  background-color: #006f3c;
+}
+
+.blue {
+  background-color: #264b96;
+}
